@@ -1,0 +1,12 @@
+cmip6-id, cmip6-label, cmip6-type
+, , 
+cmip6.landice.key_properties.grounding_line_method, Landice > Key Properties > Grounding Line Method, property
+cmip6.landice.key_properties.land_ice_albedo, Landice > Key Properties > Land Ice Albedo, property
+, , 
+cmip6.landice.glaciers.dynamic_areal_extent, Landice > Glaciers > Dynamic Areal Extent, property
+cmip6.landice.glaciers.mass_balance.ablation_calculation, Landice > Glaciers > Mass Balance > Ablation Calculation, property
+cmip6.landice.glaciers.mass_balance.downscaling_technique, Landice > Glaciers > Mass Balance > Downscaling Technique, property
+cmip6.landice.glaciers.snow_treatment.glacier_snow, Landice > Glaciers > Snow Treatment > Glacier Snow, property
+cmip6.landice.glaciers.snow_treatment.number_of_snow_layers, Landice > Glaciers > Snow Treatment > Number Of Snow Layers, property
+cmip6.landice.glaciers.snow_treatment.properties, Landice > Glaciers > Snow Treatment > Properties, property
+, , 

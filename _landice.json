@@ -1,0 +1,227 @@
+{
+    "label": "Landice", 
+    "description": "Land Ice Realm", 
+    "id": "cmip6.landice", 
+    "contact": "David Hassell", 
+    "processes": [
+        {
+            "label": "Glaciers", 
+            "description": "Land ice glaciers", 
+            "id": "cmip6.landice.glaciers", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Dynamic Areal Extent", 
+                    "description": "Does the model include a dynamic glacial extent?", 
+                    "id": "cmip6.landice.glaciers.dynamic_areal_extent", 
+                    "cardinality": "1.1", 
+                    "type": "bool", 
+                    "uiOrdinal": 1
+                }
+            ], 
+            "subProcesses": [
+                {
+                    "label": "Mass Balance", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.glaciers.mass_balance", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Ablation Calculation", 
+                            "description": "Type of scheme used to model glacier ablation", 
+                            "id": "cmip6.landice.glaciers.mass_balance.ablation_calculation", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ablation Calculation Types", 
+                                "description": "Type of scheme used to model glacier ablation", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Energy balance model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "PDD", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Downscaling Technique", 
+                            "description": "Describe how the atmospheric variables are used in the mass balance calculations", 
+                            "id": "cmip6.landice.glaciers.mass_balance.downscaling_technique", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Snow Treatment", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.glaciers.snow_treatment", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Glacier Snow", 
+                            "description": "Treatment of glacier snow", 
+                            "id": "cmip6.landice.glaciers.snow_treatment.glacier_snow", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Glacier Snow Methods", 
+                                "description": "Treatment of glacier snow", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "same as snow in land surface", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "different from snow in land surface", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Number Of Snow Layers", 
+                            "description": "If glacier snow is different from land surface then how many layers in the glacier snow model?", 
+                            "id": "cmip6.landice.glaciers.snow_treatment.number_of_snow_layers", 
+                            "cardinality": "0.1", 
+                            "type": "int", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Properties", 
+                            "description": "If glacier snow is different from land surface then describe processes describing snow on glaciers", 
+                            "id": "cmip6.landice.glaciers.snow_treatment.properties", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Snow Properties", 
+                                "description": "Processes describing snow on glaciers", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "prognostic snow albedo", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "prognostic snow density", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "prognostic snow water equivalent", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "prognostic snow heat content", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "prognostic snow temperature", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "prognostic snow liquid water content", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow melting", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow refreezing", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "blowing snow", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ], 
+    "grid": {
+        "label": "Grid", 
+        "description": "Land ice grid", 
+        "id": "cmip6.landice.grid", 
+        "contact": "David Hassell"
+    }, 
+    "keyProperties": {
+        "label": "Key Properties", 
+        "description": "Land ice key properties", 
+        "id": "cmip6.landice.key_properties", 
+        "contact": "David Hassell", 
+        "properties": [
+            {
+                "label": "Grounding Line Method", 
+                "description": "Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling", 
+                "id": "cmip6.landice.key_properties.grounding_line_method", 
+                "cardinality": "1.1", 
+                "type": "enum", 
+                "enum": {
+                    "label": "Grounding Line Methods", 
+                    "description": "Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling", 
+                    "isOpen": true, 
+                    "choices": [
+                        {
+                            "label": "grounding line prescribed", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "flux prescribed (Schoof)", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "fixed grid size", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "moving grid", 
+                            "description": null
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 1
+            }, 
+            {
+                "label": "Land Ice Albedo", 
+                "description": "Specify how land ice albedo is modelled", 
+                "id": "cmip6.landice.key_properties.land_ice_albedo", 
+                "cardinality": "1.N", 
+                "type": "enum", 
+                "enum": {
+                    "label": "Land Ice Albedo Methods", 
+                    "description": "Specify how land ice albedo is modelled", 
+                    "isOpen": true, 
+                    "choices": [
+                        {
+                            "label": "prescribed", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "function of ice age", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "function of ice density", 
+                            "description": null
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 2
+            }
+        ]
+    }
+}
