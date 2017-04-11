@@ -62,7 +62,7 @@ DETAILS['snow_treatment'] = {
              'Treatment of glacier snow'),
         ('number_of_snow_layers', 'int', '0.1',
              'If glacier snow is different from land surface then how many layers in the glacier snow model?'),
-        ('properties', 'ENUM:snow_properties', '0.N',
+        ('processes', 'ENUM:snow_processes', '0.N',
              'If glacier snow is different from land surface then describe processes describing snow on glaciers'),
     ],
 }
@@ -88,7 +88,7 @@ ENUMERATIONS['glacier_snow_methods'] = {
         ]
     }
 
-ENUMERATIONS['snow_properties'] = {
+ENUMERATIONS['snow_processes'] = {
     'description': 'Processes describing snow on glaciers',
     'is_open': True,
     'members': [

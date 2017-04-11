@@ -8,5 +8,30 @@ cmip6.landice.glaciers.mass_balance.ablation_calculation, Landice > Glaciers > M
 cmip6.landice.glaciers.mass_balance.downscaling_technique, Landice > Glaciers > Mass Balance > Downscaling Technique, property
 cmip6.landice.glaciers.snow_treatment.glacier_snow, Landice > Glaciers > Snow Treatment > Glacier Snow, property
 cmip6.landice.glaciers.snow_treatment.number_of_snow_layers, Landice > Glaciers > Snow Treatment > Number Of Snow Layers, property
-cmip6.landice.glaciers.snow_treatment.properties, Landice > Glaciers > Snow Treatment > Properties, property
+cmip6.landice.glaciers.snow_treatment.processes, Landice > Glaciers > Snow Treatment > Processes, property
+, , 
+cmip6.landice.ice_sheet.mass_balance.ablation_calculation, Landice > Ice Sheet > Mass Balance > Ablation Calculation, property
+cmip6.landice.ice_sheet.mass_balance.downscaling_technique, Landice > Ice Sheet > Mass Balance > Downscaling Technique, property
+cmip6.landice.ice_sheet.dynamics.coupling_wth_atmosphere, Landice > Ice Sheet > Dynamics > Coupling Wth Atmosphere, property
+cmip6.landice.ice_sheet.dynamics.model_numerics.timestep, Landice > Ice Sheet > Dynamics > Model Numerics > Timestep, property
+cmip6.landice.ice_sheet.dynamics.model_numerics.uses_land_surface_timestep, Landice > Ice Sheet > Dynamics > Model Numerics > Uses Land Surface Timestep, property
+cmip6.landice.ice_sheet.dynamics.model_numerics.approximation, Landice > Ice Sheet > Dynamics > Model Numerics > Approximation, property
+cmip6.landice.ice_sheet.dynamics.model_numerics.ice_streams, Landice > Ice Sheet > Dynamics > Model Numerics > Ice Streams, property
+cmip6.landice.ice_sheet.snow_treatment.ice_sheet_snow, Landice > Ice Sheet > Snow Treatment > Ice Sheet Snow, property
+cmip6.landice.ice_sheet.snow_treatment.number_of_snow_layers, Landice > Ice Sheet > Snow Treatment > Number Of Snow Layers, property
+cmip6.landice.ice_sheet.snow_treatment.prognostic_variables, Landice > Ice Sheet > Snow Treatment > Prognostic Variables, property
+cmip6.landice.ice_sheet.snow_treatment.processes, Landice > Ice Sheet > Snow Treatment > Processes, property
+, , 
+cmip6.landice.ice_shelves.bottom, Landice > Ice Shelves > Bottom, property
+cmip6.landice.ice_shelves.mass_balance.ablation_calculation, Landice > Ice Shelves > Mass Balance > Ablation Calculation, property
+cmip6.landice.ice_shelves.mass_balance.downscaling_technique, Landice > Ice Shelves > Mass Balance > Downscaling Technique, property
+cmip6.landice.ice_shelves.dynamics.coupling_wth_ocean, Landice > Ice Shelves > Dynamics > Coupling Wth Ocean, property
+cmip6.landice.ice_shelves.dynamics.model_numerics.timestep, Landice > Ice Shelves > Dynamics > Model Numerics > Timestep, property
+cmip6.landice.ice_shelves.dynamics.model_numerics.uses_ocean_timestep, Landice > Ice Shelves > Dynamics > Model Numerics > Uses Ocean Timestep, property
+cmip6.landice.ice_shelves.dynamics.model_numerics.uses_land_surface_timestep, Landice > Ice Shelves > Dynamics > Model Numerics > Uses Land Surface Timestep, property
+cmip6.landice.ice_shelves.dynamics.model_numerics.approximation, Landice > Ice Shelves > Dynamics > Model Numerics > Approximation, property
+cmip6.landice.ice_shelves.snow_treatment.ice_shelf_snow, Landice > Ice Shelves > Snow Treatment > Ice Shelf Snow, property
+cmip6.landice.ice_shelves.snow_treatment.number_of_snow_layers, Landice > Ice Shelves > Snow Treatment > Number Of Snow Layers, property
+cmip6.landice.ice_shelves.snow_treatment.prognostic_variables, Landice > Ice Shelves > Snow Treatment > Prognostic Variables, property
+cmip6.landice.ice_shelves.snow_treatment.processes, Landice > Ice Shelves > Snow Treatment > Processes, property
 , , 

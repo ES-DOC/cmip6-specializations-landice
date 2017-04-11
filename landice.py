@@ -36,7 +36,7 @@ QC_STATUS = 'draft'
 # --------------------------------------------------------------------
 CHANGE_HISTORY = [
     ("0.1.0", "2016-04-11", "David Hassell",
-        "Initialised from CMIP5 mind map"),
+        "Initialised from CMIP5 mind map + a bit of reorganising (but no logical difference)"),
 ]
 
 # --------------------------------------------------------------------
@@ -59,7 +59,9 @@ KEY_PROPERTIES = 'landice_key_properties'
 # --------------------------------------------------------------------
 PROCESSES = [
     'landice_glaciers',
-    ]
+    'landice_ice_sheet',
+    'landice_ice_shelves',
+]
 
 # --------------------------------------------------------------------
 # DETAILS: top level realm details

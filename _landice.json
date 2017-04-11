@@ -97,13 +97,13 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Properties", 
+                            "label": "Processes", 
                             "description": "If glacier snow is different from land surface then describe processes describing snow on glaciers", 
-                            "id": "cmip6.landice.glaciers.snow_treatment.properties", 
+                            "id": "cmip6.landice.glaciers.snow_treatment.processes", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Snow Properties", 
+                                "label": "Snow Processes", 
                                 "description": "Processes describing snow on glaciers", 
                                 "isOpen": true, 
                                 "choices": [
@@ -146,6 +146,479 @@
                                 ]
                             }, 
                             "uiOrdinal": 3
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "label": "Ice Sheet", 
+            "description": "Land ice sheets", 
+            "id": "cmip6.landice.ice_sheet", 
+            "contact": "David Hassell", 
+            "subProcesses": [
+                {
+                    "label": "Mass Balance", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.ice_sheet.mass_balance", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Ablation Calculation", 
+                            "description": "Type of scheme used to calcualte ablation in te ice sheet mass balance", 
+                            "id": "cmip6.landice.ice_sheet.mass_balance.ablation_calculation", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ablation Calculation Types", 
+                                "description": "Type of scheme used to model ice sheet ablation", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Energy balance model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "PDD", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Downscaling Technique", 
+                            "description": "Describe how the atmospheric variables are used in the mass balance calculations", 
+                            "id": "cmip6.landice.ice_sheet.mass_balance.downscaling_technique", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Dynamics", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.ice_sheet.dynamics", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Coupling Wth Atmosphere", 
+                            "description": "Describe the coupling method between the land ice sheet and atmosphere", 
+                            "id": "cmip6.landice.ice_sheet.dynamics.coupling_wth_atmosphere", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }
+                    ], 
+                    "propertySets": [
+                        {
+                            "label": "Model Numerics", 
+                            "description": "TODO", 
+                            "id": "cmip6.landice.ice_sheet.dynamics.model_numerics", 
+                            "properties": [
+                                {
+                                    "label": "Timestep", 
+                                    "description": "Timestep (in seconds) of the land ice sheet scheme", 
+                                    "id": "cmip6.landice.ice_sheet.dynamics.model_numerics.timestep", 
+                                    "cardinality": "1.1", 
+                                    "type": "int", 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Uses Land Surface Timestep", 
+                                    "description": "Is the timestep the same as land surface timestep?", 
+                                    "id": "cmip6.landice.ice_sheet.dynamics.model_numerics.uses_land_surface_timestep", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Approximation", 
+                                    "description": "Approximation type used in modelling ice sheet dynamics", 
+                                    "id": "cmip6.landice.ice_sheet.dynamics.model_numerics.approximation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Approximation Types", 
+                                        "description": "Approximation type used in modelling ice sheet dynamics", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "shallow ice", 
+                                                "description": null
+                                            }, 
+                                            {
+                                                "label": "higher order", 
+                                                "description": null
+                                            }, 
+                                            {
+                                                "label": "full stokes", 
+                                                "description": null
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Ice Streams", 
+                                    "description": "Are ice streams modelled within the land ice model?", 
+                                    "id": "cmip6.landice.ice_sheet.dynamics.model_numerics.ice_streams", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Snow Treatment", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.ice_sheet.snow_treatment", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Ice Sheet Snow", 
+                            "description": "Treatment of ice sheet snow", 
+                            "id": "cmip6.landice.ice_sheet.snow_treatment.ice_sheet_snow", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ice Sheet Snow Methods", 
+                                "description": "Treatment of ice sheet snow", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "same as snow in land surface", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "different from snow in land surface", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Number Of Snow Layers", 
+                            "description": "If ice sheet snow is different from land surface then how many layers in the ice sheet snow model?", 
+                            "id": "cmip6.landice.ice_sheet.snow_treatment.number_of_snow_layers", 
+                            "cardinality": "0.1", 
+                            "type": "int", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Prognostic Variables", 
+                            "description": "If ice sheet snow is different from land surface then list the prognostic variables the ice sheet snow model", 
+                            "id": "cmip6.landice.ice_sheet.snow_treatment.prognostic_variables", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Snow Prognostic Variables", 
+                                "description": "Prognostic variables the ice sheet snow model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "snow albedo", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow density", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow water equivalent", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow heat content", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow temperature", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow liquid water content", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Processes", 
+                            "description": "If ice sheet snow is different from land surface then describe processes describing snow on ice sheets", 
+                            "id": "cmip6.landice.ice_sheet.snow_treatment.processes", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ice Sheet Snow Processes", 
+                                "description": "Processes describing snow on ice sheets", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "snow melting", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow refreezing", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "blowing snow", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "label": "Ice Shelves", 
+            "description": "Land ice shelves", 
+            "id": "cmip6.landice.ice_shelves", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Bottom", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.ice_shelves.bottom", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Bottom Types", 
+                        "description": "TODO", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "basal melting", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 1
+                }
+            ], 
+            "subProcesses": [
+                {
+                    "label": "Mass Balance", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.ice_shelves.mass_balance", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Ablation Calculation", 
+                            "description": "Type of scheme used to calcualte ablation in the ice shelf mass balance", 
+                            "id": "cmip6.landice.ice_shelves.mass_balance.ablation_calculation", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ablation Calculation Types", 
+                                "description": "Type of scheme used to model ice shelf ablation", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Energy balance model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "PDD", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Downscaling Technique", 
+                            "description": "Describe how the atmospheric variables are used in the mass balance calculations", 
+                            "id": "cmip6.landice.ice_shelves.mass_balance.downscaling_technique", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Dynamics", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.ice_shelves.dynamics", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Coupling Wth Ocean", 
+                            "description": "Describe the coupling method between the land ice shelf and ocean", 
+                            "id": "cmip6.landice.ice_shelves.dynamics.coupling_wth_ocean", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }
+                    ], 
+                    "propertySets": [
+                        {
+                            "label": "Model Numerics", 
+                            "description": "TODO", 
+                            "id": "cmip6.landice.ice_shelves.dynamics.model_numerics", 
+                            "properties": [
+                                {
+                                    "label": "Timestep", 
+                                    "description": "Timestep (in seconds) of the land ice shelf scheme", 
+                                    "id": "cmip6.landice.ice_shelves.dynamics.model_numerics.timestep", 
+                                    "cardinality": "1.1", 
+                                    "type": "int", 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Uses Ocean Timestep", 
+                                    "description": "Is the timestep the same as land surface timestep?", 
+                                    "id": "cmip6.landice.ice_shelves.dynamics.model_numerics.uses_ocean_timestep", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Uses Land Surface Timestep", 
+                                    "description": "Is the timestep the same as land surface timestep?", 
+                                    "id": "cmip6.landice.ice_shelves.dynamics.model_numerics.uses_land_surface_timestep", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Approximation", 
+                                    "description": "Approximation type used in modelling ice shelf dynamics", 
+                                    "id": "cmip6.landice.ice_shelves.dynamics.model_numerics.approximation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Approximation Types", 
+                                        "description": "Approximation type used in modelling ice shelf dynamics", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "shallow ice", 
+                                                "description": null
+                                            }, 
+                                            {
+                                                "label": "full stokes", 
+                                                "description": null
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Snow Treatment", 
+                    "description": "TODO", 
+                    "id": "cmip6.landice.ice_shelves.snow_treatment", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Ice Shelf Snow", 
+                            "description": "Treatment of ice shelf snow", 
+                            "id": "cmip6.landice.ice_shelves.snow_treatment.ice_shelf_snow", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ice Shelf Snow Methods", 
+                                "description": "Treatment of ice shelf snow", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "same as snow in land surface", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "different from snow in land surface", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Number Of Snow Layers", 
+                            "description": "If ice shelf snow is different from land surface then how many layers in the ice shelf snow model?", 
+                            "id": "cmip6.landice.ice_shelves.snow_treatment.number_of_snow_layers", 
+                            "cardinality": "0.1", 
+                            "type": "int", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Prognostic Variables", 
+                            "description": "If ice shelf snow is different from land surface then list the prognostic variables the ice shelf snow model", 
+                            "id": "cmip6.landice.ice_shelves.snow_treatment.prognostic_variables", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Snow Prognostic Variables", 
+                                "description": "Prognostic variables the ice shelf snow model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "snow albedo", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow density", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow water equivalent", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow heat content", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow temperature", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow liquid water content", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Processes", 
+                            "description": "If ice shelf snow is different from land surface then describe processes describing snow on ice shelves", 
+                            "id": "cmip6.landice.ice_shelves.snow_treatment.processes", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ice Shelf Snow Processes", 
+                                "description": "Processes describing snow on ice shelves", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "snow melting", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "snow refreezing", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "blowing snow", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 4
                         }
                     ]
                 }
