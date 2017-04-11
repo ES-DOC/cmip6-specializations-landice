@@ -58,15 +58,7 @@ KEY_PROPERTIES = 'landice_key_properties'
 # PROCESSES: Processes simulated within the realm
 # --------------------------------------------------------------------
 PROCESSES = [
-#    'land_soil',
-#    'land_snow',
-#    'land_vegetation',
-#    'land_energy_balance',
-#    'land_albedo',
-#    'land_carbon_cycle',
-#    'land_nitrogen_cycle',
-#    'land_river_routing',
-#    'land_lakes',
+    'landice_glaciers',
     ]
 
 # --------------------------------------------------------------------
