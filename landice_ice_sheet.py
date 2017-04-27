@@ -53,7 +53,7 @@ DETAILS['mass_balance'] = {
     'description': 'TODO',
     'properties': [
         ('calculated_in_atmosphere', 'bool', '1.1',
-             'Is the ice sheet mass balance calculated in the atmosphere component?'),
+             'Is the ice sheet mass balance calculated in the atmosphere/land surface components?'),
         ('ablation_calculation', 'ENUM:ablation_calculation_types', '0.1',
              'If mass balance is calculated in land ice model, the type of scheme used to calculate ablation in the ice sheet mass balance'),
         ('downscaling_technique', 'str', '0.1',
@@ -91,9 +91,9 @@ DETAILS['dynamics:model_numerics'] = {
 DETAILS['snow_treatment'] = {
     'description': 'TODO',
     'properties': [
-        ('calculated_in _atmosphere', 'bool', '1.1',
+        ('calculated_in_atmosphere', 'bool', '1.1',
              'Is the ice sheet snow calculated in the atmosphere/land surface components?'),
-        ('subgrid_hipsometry', 'str', '1.1',
+        ('subgrid_hipsometry', 'str', '0.1',
              'Describe any subgrid-scale hipsometry in land ice sheet snow'),
         ('number_of_snow_layers', 'int', '0.1',
              'If the ice sheet snow is calculated in the land ice model then how many snow layers?'),

@@ -48,22 +48,24 @@ DETAILS['toplevel'] = {
 DETAILS['mass_balance'] = {
     'description': 'TODO',
     'properties': [
-        ('ablation_calculation', 'ENUM:ablation_calculation_types', '1.1',
-             'Type of scheme used to model glacier ablation'),
-        ('downscaling_technique', 'str', '1.1',
-             'Describe how the atmospheric variables are used in the mass balance calculations'),
-    ],
+        ('calculated_in_atmosphere', 'bool', '1.1',
+             'Is the ice sheet mass balance calculated in the atmosphere/land surface components?'),
+        ('ablation_calculation', 'ENUM:ablation_calculation_types', '0.1',
+             'If mass balance is calculated in land ice model, the type of scheme used to calculate ablation in the ice sheet mass balance'),
+        ('downscaling_technique', 'str', '0.1',
+             'If mass balance is calculated in land ice model, describe how the atmospheric variables are used in the mass balance calculations'),
+    ]
 }
 
 DETAILS['snow_treatment'] = {
     'description': 'TODO',
     'properties': [
-        ('glacier_snow', 'ENUM:glacier_snow_methods', '1.1',
-             'Treatment of glacier snow'),
+        ('calculated_in_atmosphere', 'bool', '1.1',
+             'Is the glacier snow calculated in the atmosphere/land surface components?'),
         ('number_of_snow_layers', 'int', '0.1',
-             'If glacier snow is different from land surface then how many layers in the glacier snow model?'),
+             'If glacier snow is calculated in the land ice model, how many layers in the glacier snow model?'),
         ('processes', 'ENUM:snow_processes', '0.N',
-             'If glacier snow is different from land surface then describe processes describing snow on glaciers'),
+             'If glacier snow is calculated in the land ice model, describe processes describing snow on glaciers'),
     ],
 }
 

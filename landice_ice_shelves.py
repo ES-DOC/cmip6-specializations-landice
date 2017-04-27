@@ -37,8 +37,12 @@ DESCRIPTION = 'Land ice shelves'
 DETAILS['toplevel'] = {
     'description': 'TODO',
     'properties': [
-        ('bottom', 'ENUM:bottom_types', '1.1',
-             'TODO'),
+        ('adaptive_grid', 'bool', '1.1',
+             'Is an adative grid being used?'),    
+        ('resolution_limit', 'float', '0.1',
+             'If an adative grid is being used, what is the limit of the resolution (in metres)'),    
+        ('basal_melting', 'str', '1.1',
+            'Describe the land ice shelf basal melting scheme'),
     ],
 }
 
@@ -48,10 +52,12 @@ DETAILS['toplevel'] = {
 DETAILS['mass_balance'] = {
     'description': 'TODO',
     'properties': [
+        ('calculated_in_atmosphere', 'bool', '1.1',
+             'Is the ice shelf mass balance calculated in the atmosphere component?'),        
         ('ablation_calculation', 'ENUM:ablation_calculation_types', '1.1',
-             'Type of scheme used to calcualte ablation in the ice shelf mass balance'),
+             'If mass balance is calculated in land ice model, the type of scheme used to calcualte ablation in the ice shelf mass balance'),
         ('downscaling_technique', 'str', '1.1',
-             'Describe how the atmospheric variables are used in the mass balance calculations'),
+             'If mass balance is calculated in land ice model, describe how the atmospheric variables are used in the mass balance calculations'),
     ],
 }
 
@@ -89,14 +95,16 @@ DETAILS['dynamics:model_numerics'] = {
 DETAILS['snow_treatment'] = {
     'description': 'TODO',
     'properties': [
-        ('ice_shelf_snow', 'ENUM:ice_shelf_snow_methods', '1.1',
-             'Treatment of ice shelf snow'),
+        ('calculated_in_atmosphere', 'bool', '1.1',
+             'Is the ice shelf snow calculated in the atmosphere/land surface components?'),
+        ('subgrid_hipsometry', 'str', '0.1',
+             'Describe any subgrid-scale hipsometry in land ice shelf snow'),
         ('number_of_snow_layers', 'int', '0.1',
-             'If ice shelf snow is different from land surface then how many layers in the ice shelf snow model?'),
+             'If mass balance is calculated in land ice model, how many layers in the ice shelf snow model?'),
         ('prognostic_variables', 'ENUM:snow_prognostic_variables', '0.N',
-             'If ice shelf snow is different from land surface then list the prognostic variables the ice shelf snow model'),
+             'If mass balance is calculated in land ice model, list the prognostic variables the ice shelf snow model'),
         ('processes', 'ENUM:ice_shelf_snow_processes', '0.N',
-             'If ice shelf snow is different from land surface then describe processes describing snow on ice shelves'),
+             'If mass balance is calculated in land ice model, describe processes describing snow on ice shelves'),
     ],
 }
 
@@ -116,7 +124,7 @@ ENUMERATIONS['ablation_calculation_types'] = {
     'is_open': True,
     'members': [
         ('Energy balance model', None),
-        ('PDD', None),
+        ('PDD', 'positive degree days'),
     ]
 }
 
@@ -124,7 +132,8 @@ ENUMERATIONS['approximation_types'] = {
     'description': 'Approximation type used in modelling ice shelf dynamics',
     'is_open': True,
     'members': [
-        ('shallow ice', None),
+        ('SIA', None),
+        ('SAA', None),
         ('full stokes', None),
         ]
     }
