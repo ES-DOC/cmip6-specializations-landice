@@ -32,8 +32,19 @@ QC_STATUS = 'draft'
 DESCRIPTION = 'Land ice sheets'
 
 # --------------------------------------------------------------------
-# PROCESS: top level properties
+# KEY PROPERTIES: top level
 # --------------------------------------------------------------------
+DETAILS['toplevel'] = {
+    'description': 'General key properties in land ice sheet',
+    'properties': [
+        ('adaptive_grid', 'bool', '1.1',
+             'Is an adative grid being used?'),    
+        ('resolution_limit', 'float', '0.1',
+             'If an adative grid is being used, what is the limit of the resolution (in metres)'),    
+        ('basal_melting', 'str', '1.1',
+            'Describe the land ice sheet basal melting scheme'),
+    ]
+}
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: Mass Balance
@@ -41,18 +52,20 @@ DESCRIPTION = 'Land ice sheets'
 DETAILS['mass_balance'] = {
     'description': 'TODO',
     'properties': [
-        ('ablation_calculation', 'ENUM:ablation_calculation_types', '1.1',
-             'Type of scheme used to calcualte ablation in te ice sheet mass balance'),
-        ('downscaling_technique', 'str', '1.1',
-             'Describe how the atmospheric variables are used in the mass balance calculations'),
-    ],
+        ('calculated_in_atmosphere', 'bool', '1.1',
+             'Is the ice sheet mass balance calculated in the atmosphere component?'),
+        ('ablation_calculation', 'ENUM:ablation_calculation_types', '0.1',
+             'If mass balance is calculated in land ice model, the type of scheme used to calculate ablation in the ice sheet mass balance'),
+        ('downscaling_technique', 'str', '0.1',
+             'If mass balance is calculated in land ice model, describe how the atmospheric variables are used in the mass balance calculations'),
+    ]
 }
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: Dynamics
 # --------------------------------------------------------------------
 DETAILS['dynamics'] = {
-    'description': 'TODO',
+    'description': '',
     'properties': [
         ('coupling_wth_atmosphere', 'str', '1.1',
              'Describe the coupling method between the land ice sheet and atmosphere'),
@@ -67,12 +80,8 @@ DETAILS['dynamics:model_numerics'] = {
     'properties': [
         ('timestep', 'int', '1.1',
              'Timestep (in seconds) of the land ice sheet scheme',),        
-        ('uses_land_surface_timestep', 'bool', '1.1',
-             'Is the timestep the same as land surface timestep?'),
-        ('approximation', 'ENUM:approximation_types', '1.1',
+        ('approximation', 'ENUM:approximation_types', '1.N',
             'Approximation type used in modelling ice sheet dynamics'),
-        ('ice_streams', 'bool', '1.1',
-             'Are ice streams modelled within the land ice model?'),
     ],
 }
 
@@ -82,14 +91,16 @@ DETAILS['dynamics:model_numerics'] = {
 DETAILS['snow_treatment'] = {
     'description': 'TODO',
     'properties': [
-        ('ice_sheet_snow', 'ENUM:ice_sheet_snow_methods', '1.1',
-             'Treatment of ice sheet snow'),
+        ('calculated_in _atmosphere', 'bool', '1.1',
+             'Is the ice sheet snow calculated in the atmosphere/land surface components?'),
+        ('subgrid_hipsometry', 'str', '1.1',
+             'Describe any subgrid-scale hipsometry in land ice sheet snow'),
         ('number_of_snow_layers', 'int', '0.1',
-             'If ice sheet snow is different from land surface then how many layers in the ice sheet snow model?'),
+             'If the ice sheet snow is calculated in the land ice model then how many snow layers?'),
         ('prognostic_variables', 'ENUM:snow_prognostic_variables', '0.N',
-             'If ice sheet snow is different from land surface then list the prognostic variables the ice sheet snow model'),
+             'If the ice sheet snow is calculated in the land ice model then list the prognostic variables the ice sheet snow model'),
         ('processes', 'ENUM:ice_sheet_snow_processes', '0.N',
-             'If ice sheet snow is different from land surface then describe processes describing snow on ice sheets'),
+             'If the ice sheet snow is calculated in the land ice model then describe processes describing snow on ice sheets'),
     ],
 }
 
@@ -101,7 +112,7 @@ ENUMERATIONS['ablation_calculation_types'] = {
     'is_open': True,
     'members': [
         ('Energy balance model', None),
-        ('PDD', None),
+        ('PDD', 'positive degree days'),
     ]
 }
 
@@ -109,11 +120,11 @@ ENUMERATIONS['approximation_types'] = {
     'description': 'Approximation type used in modelling ice sheet dynamics',
     'is_open': True,
     'members': [
-        ('shallow ice', None),
-        ('higher order', None),
+        ('SIA', None),
+        ('SAA', None),
         ('full stokes', None),
-        ]
-    }
+    ]
+}
 
 ENUMERATIONS['ice_sheet_snow_methods'] = {
     'description': 'Treatment of ice sheet snow',

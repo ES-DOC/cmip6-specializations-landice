@@ -41,6 +41,10 @@ DETAILS['toplevel'] = {
             'Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling'),
         ('land_ice_albedo', 'ENUM:land_ice_albedo_methods', '1.N',
             'Specify how land ice albedo is modelled',),
+        ('atmospheric_coupling_variables', 'str', '1.1',
+             'Which variables are passed between the atmosphere and land ice components (e.g. orography, ice mass)'), 
+        ('prognostic_variables', 'ENUM:prognostic_variable_types', '1.N',
+             'Which variables are prognostically calculated in the land ice model'),
         ]
     }
 
@@ -65,5 +69,15 @@ ENUMERATIONS['land_ice_albedo_methods'] = {
         ('prescribed', None),
         ('function of ice age', None),
         ('function of ice density', None),
+    ]
+}
+
+ENUMERATIONS['prognostic_variable_types'] = {
+    'description': 'Which variables are prognostically calculated in the land ice model',
+    'is_open': True,
+    'members': [
+        ('ice velocity', None),
+        ('ice thickness', None),
+        ('ice temperature', None),
     ]
 }

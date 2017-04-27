@@ -35,8 +35,14 @@ DESCRIPTION = 'Land ice grid'
 # 
 # --------------------------------------------------------------------
 DETAILS['toplevel'] = {
-    'description': 'Place-holder for general grid information',
+    'description': 'Grid of land ice component',
     'properties': [
+        ('adaptive_grid', 'bool', '1.1',
+             'Is an adative grid being used?'),    
+        ('base_resolution', 'float', '1.1',
+            'The base resolution (in metres), before any adaption'),
+        ('projection', 'str', '1.1',
+            'The projection of the land ice grid (e.g. albers_equal_area)'),
     ]
 }
 
