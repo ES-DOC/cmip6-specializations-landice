@@ -29,35 +29,52 @@ QC_STATUS = 'draft'
 # --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
-DESCRIPTION = 'Land ice sheets'
+DESCRIPTION = 'Ice sheet and ice shelf'
 
 # --------------------------------------------------------------------
 # KEY PROPERTIES: top level
 # --------------------------------------------------------------------
 DETAILS['toplevel'] = {
-    'description': 'General key properties in land ice sheet',
+    'description': 'General key properties in ice sheets and ice shelves',
     'properties': [
         ('adaptive_grid', 'bool', '1.1',
              'Is an adative grid being used?'),    
         ('resolution_limit', 'float', '0.1',
              'If an adative grid is being used, what is the limit of the resolution (in metres)'),    
-        ('basal_melting', 'str', '1.1',
-            'Describe the land ice sheet basal melting scheme'),
+        ('grounding_line_method', 'ENUM:grounding_line_methods', '1.1',
+            'Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling'),
     ]
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: Mass Balance
+# SUB-PROCESS: Mass balance
 # --------------------------------------------------------------------
-DETAILS['mass_balance'] = {
+DETAILS['basal_mass_balance'] = {
+    'description': 'TODO',
+    'properties': [],
+    'detail_sets': [
+        'basal',
+        'frontal'
+    ],
+}
+
+DETAILS['mass_balance:basal'] = {
     'description': 'TODO',
     'properties': [
-        ('calculated_in_atmosphere', 'bool', '1.1',
-             'Is the ice sheet mass balance calculated in the atmosphere/land surface components?'),
-        ('ablation_calculation', 'ENUM:ablation_calculation_types', '0.1',
-             'If mass balance is calculated in land ice model, the type of scheme used to calculate ablation in the ice sheet mass balance'),
-        ('downscaling_technique', 'str', '0.1',
-             'If mass balance is calculated in land ice model, describe how the atmospheric variables are used in the mass balance calculations'),
+        ('bedrock', 'str', '0.1',
+             'Describe the implementation of basal melting over bedrock'),
+        ('ocean', 'str', '0.1',
+             'Describe the implementation of basal melting over the ocean'),
+    ]
+}
+
+DETAILS['mass_balance:frontal'] = {
+    'description': 'TODO',
+    'properties': [
+        ('calving', 'str', '0.1',
+             'Describe the implementation of calving from the front of the ice shelf'),
+        ('melting', 'str', '0.1',
+             'Describe the implementation of melting from the front of the ice shelf'),
     ]
 }
 
@@ -67,8 +84,10 @@ DETAILS['mass_balance'] = {
 DETAILS['dynamics'] = {
     'description': '',
     'properties': [
-        ('coupling_wth_atmosphere', 'str', '1.1',
-             'Describe the coupling method between the land ice sheet and atmosphere'),
+        ('coupling_wth_atmosphere', 'str', '0.1',
+             'Describe the coupling method between the ice sheet and ice shelf and atmosphere'),
+        ('coupling_wth_ocean', 'str', '0.1',
+             'Describe the coupling method between the ice sheet and ice shelf and the ocean'),
     ],
     'detail_sets': [
         'model_numerics',
@@ -79,34 +98,26 @@ DETAILS['dynamics:model_numerics'] = {
     'description': 'TODO',
     'properties': [
         ('timestep', 'int', '1.1',
-             'Timestep (in seconds) of the land ice sheet scheme',),        
+             'Timestep (in seconds) of the ice scheme',),        
         ('approximation', 'ENUM:approximation_types', '1.N',
-            'Approximation type used in modelling ice sheet dynamics'),
-    ],
-}
-
-# --------------------------------------------------------------------
-# SUB-PROCESS: Snow treatment
-# --------------------------------------------------------------------
-DETAILS['snow_treatment'] = {
-    'description': 'TODO',
-    'properties': [
-        ('calculated_in_atmosphere', 'bool', '1.1',
-             'Is the ice sheet snow calculated in the atmosphere/land surface components?'),
-        ('subgrid_hipsometry', 'str', '0.1',
-             'Describe any subgrid-scale hipsometry in land ice sheet snow'),
-        ('number_of_snow_layers', 'int', '0.1',
-             'If the ice sheet snow is calculated in the land ice model then how many snow layers?'),
-        ('prognostic_variables', 'ENUM:snow_prognostic_variables', '0.N',
-             'If the ice sheet snow is calculated in the land ice model then list the prognostic variables the ice sheet snow model'),
-        ('processes', 'ENUM:ice_sheet_snow_processes', '0.N',
-             'If the ice sheet snow is calculated in the land ice model then describe processes describing snow on ice sheets'),
+            'Approximation type used in modelling ice dynamics'),
     ],
 }
 
 # --------------------------------------------------------------------
 # ENUMERATIONS
 # --------------------------------------------------------------------
+ENUMERATIONS['grounding_line_methods'] = {
+    'description': 'Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling',
+    'is_open': True,
+    'members': [
+        ('grounding line prescribed', None),
+        ('flux prescribed (Schoof)', None),
+        ('fixed grid size', None),
+        ('moving grid', None),
+    ]
+}
+
 ENUMERATIONS['ablation_calculation_types'] = {
     'description': 'Type of scheme used to model ice sheet ablation',
     'is_open': True,
@@ -123,28 +134,6 @@ ENUMERATIONS['approximation_types'] = {
         ('SIA', None),
         ('SAA', None),
         ('full stokes', None),
-    ]
-}
-
-ENUMERATIONS['ice_sheet_snow_methods'] = {
-    'description': 'Treatment of ice sheet snow',
-    'is_open': True,
-    'members': [
-        ('same as snow in land surface', None),
-        ('different from snow in land surface', None),
-    ]
-}
-
-ENUMERATIONS['snow_prognostic_variables'] = {
-    'description': 'Prognostic variables the ice sheet snow model',
-    'is_open': True,
-    'members': [
-        ('snow albedo', None),
-        ('snow density', None),
-        ('snow water equivalent', None),
-        ('snow heat content', None),
-        ('snow temperature', None),
-        ('snow liquid water content', None),
     ]
 }
 

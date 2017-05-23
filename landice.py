@@ -37,8 +37,10 @@ QC_STATUS = 'draft'
 CHANGE_HISTORY = [
     ("0.1.0", "2016-04-11", "David Hassell",
          "Initialised from CMIP5 mind map + a bit of reorganising (but no logical difference)"),
-    ("0.2.0", "2016-04-25", "David Hassell",
-         "Updated with input from Steve George"),
+    ("0.2.0", "2017-04-25", "David Hassell",
+         "Updated with input from Steve George (NCAS)"),
+    ("0.3.0", "2017-05-22", "David Hassell",
+         "Updated with input from Sophie Nowicki (NASA)"),
 ]
 
 # --------------------------------------------------------------------
