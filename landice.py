@@ -24,7 +24,7 @@ AUTHORS = 'David Hassell'
 # --------------------------------------------------------------------
 # CONTRIBUTORS: Set to realm specialization contributors (comma delimited).
 # --------------------------------------------------------------------
-CONTRIBUTORS = ''
+CONTRIBUTORS = 'Sophie Nowicki, Steve George'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
@@ -68,8 +68,7 @@ KEY_PROPERTIES = 'landice_key_properties'
 # --------------------------------------------------------------------
 PROCESSES = [
     'landice_glaciers',
-    'landice_ice_sheet',
-    'landice_ice_shelves',
+    'landice_ice',
 ]
 
 # --------------------------------------------------------------------
