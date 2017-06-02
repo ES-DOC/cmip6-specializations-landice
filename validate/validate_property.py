@@ -47,8 +47,6 @@ def _validate_name(errors, name):
         errors.append("name must be a string :: [{}]".format(name))
     elif len(name.strip()) == 0:
         errors.append("name must not be a zero length string")
-    elif ' ' in name:
-        errors.append("name must not contain white space")
     # TODO apply regex
 
 
