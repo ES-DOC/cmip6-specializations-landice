@@ -32,7 +32,7 @@ CONTRIBUTORS = 'Sophie Nowicki, Steve George'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# CHANGE HISTORY: Set to list: (version, date, comment, who).
+# CHANGE HISTORY: Set to list: (version, date, who, comment).
 # --------------------------------------------------------------------
 CHANGE_HISTORY = [
     ("0.1.0", "2016-04-11", "David Hassell",
