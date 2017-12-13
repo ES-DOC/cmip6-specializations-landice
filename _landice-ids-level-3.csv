@@ -4,6 +4,9 @@ cmip6.landice.key_properties.ice_albedo, Landice > Key Properties > Ice Albedo, 
 cmip6.landice.key_properties.atmospheric_coupling_variables, Landice > Key Properties > Atmospheric Coupling Variables, property
 cmip6.landice.key_properties.oceanic_coupling_variables, Landice > Key Properties > Oceanic Coupling Variables, property
 cmip6.landice.key_properties.prognostic_variables, Landice > Key Properties > Prognostic Variables, property
+cmip6.landice.key_properties.software_properties.repository, Landice > Key Properties > Software Properties > Repository, property
+cmip6.landice.key_properties.software_properties.code_version, Landice > Key Properties > Software Properties > Code Version, property
+cmip6.landice.key_properties.software_properties.code_languages, Landice > Key Properties > Software Properties > Code Languages, property
 , , 
 cmip6.landice.grid.adaptive_grid, Landice > Grid > Adaptive Grid, property
 cmip6.landice.grid.base_resolution, Landice > Grid > Base Resolution, property
@@ -22,5 +25,6 @@ cmip6.landice.ice.mass_balance.frontal.calving, Landice > Ice > Mass Balance > F
 cmip6.landice.ice.mass_balance.frontal.melting, Landice > Ice > Mass Balance > Frontal > Melting, property
 cmip6.landice.ice.dynamics.description, Landice > Ice > Dynamics > Description, property
 cmip6.landice.ice.dynamics.approximation, Landice > Ice > Dynamics > Approximation, property
+cmip6.landice.ice.dynamics.adaptive_timestep, Landice > Ice > Dynamics > Adaptive Timestep, property
 cmip6.landice.ice.dynamics.timestep, Landice > Ice > Dynamics > Timestep, property
 , , 

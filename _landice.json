@@ -179,12 +179,20 @@
                             "uiOrdinal": 2
                         }, 
                         {
+                            "label": "Adaptive Timestep", 
+                            "description": "Is there an adaptive time scheme for the ice scheme?", 
+                            "id": "cmip6.landice.ice.dynamics.adaptive_timestep", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 3
+                        }, 
+                        {
                             "label": "Timestep", 
-                            "description": "Timestep (in seconds) of the ice scheme", 
+                            "description": "Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.", 
                             "id": "cmip6.landice.ice.dynamics.timestep", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }
@@ -314,6 +322,39 @@
                     ]
                 }, 
                 "uiOrdinal": 5
+            }
+        ], 
+        "propertySets": [
+            {
+                "label": "Software Properties", 
+                "description": "Software properties of land ice code", 
+                "id": "cmip6.landice.key_properties.software_properties", 
+                "properties": [
+                    {
+                        "label": "Repository", 
+                        "description": "Location of code for this component.", 
+                        "id": "cmip6.landice.key_properties.software_properties.repository", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Code Version", 
+                        "description": "Code version identifier.", 
+                        "id": "cmip6.landice.key_properties.software_properties.code_version", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Code Languages", 
+                        "description": "Code language(s).", 
+                        "id": "cmip6.landice.key_properties.software_properties.code_languages", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }
+                ]
             }
         ]
     }
