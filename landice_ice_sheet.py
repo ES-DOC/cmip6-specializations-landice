@@ -101,8 +101,10 @@ DETAILS['dynamics'] = {
 DETAILS['dynamics:numerics'] = {
     'description': 'TODO',
     'properties': [
+        ('adaptive_timestep_scheme', 'bool', '1.1',
+             'Is there an adaptive time scheme for the ice sheet model?'),
         ('timestep', 'int', '1.1',
-             'Timestep (in seconds) of the ice scheme',),        
+             'Timestep (in seconds) of the ice sheet scheme. If adaptive, then state a representative timestep.',),        
         ('approximation', 'ENUM:approximation_types', '1.N',
             'Approximation type used in modelling ice dynamics'),
     ],

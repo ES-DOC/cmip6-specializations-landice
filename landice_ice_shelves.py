@@ -78,6 +78,11 @@ DETAILS['dynamics'] = {
 DETAILS['dynamics:model_numerics'] = {
     'description': 'TODO',
     'properties': [
+        ('adaptive_timestep_scheme', 'bool', '1.1',
+             'Is there an adaptive time scheme for the ice shelf model?'),
+        ('timestep', 'int', '1.1',
+             'Timestep (in seconds) of the ice shelf scheme. If adaptive, then state a representative timestep.',),        
+        
         ('timestep', 'int', '1.1',
              'Timestep (in seconds) of the land ice shelf scheme',),        
         ('uses_ocean_timestep', 'bool', '1.1',
