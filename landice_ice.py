@@ -46,12 +46,17 @@ DETAILS['toplevel'] = {
     ]
 }
 
+#where I had calculated the SMB after I run the climate model for a year. Here we used sub-daily atmospheric output. For another model setup, we had calculated the SMB in the atmosphere model component on the atmosphere grid. Since this grid is too coarse to resolve the marginal melting zones, we are planning to couple the atmosphere model component to a higher resolved specialized SMB model. Therefore, we want to transfer the required fields through our coupler, like it is done for the atmosphere-ocean coupling. The SMB model will perform it's own IO. 
+
 # --------------------------------------------------------------------
 # SUB-PROCESS: Mass balance
 # --------------------------------------------------------------------
 DETAILS['mass_balance'] = {
-    'description': 'TODO',
-    'properties': [],
+    'description': 'Description of the surface mass balance treatment',
+    'properties': [
+        ('surface_mass_balance', 'str', '1.1',
+            'Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution'),
+    ],
     'detail_sets': [
         'basal',
         'frontal'
@@ -59,7 +64,7 @@ DETAILS['mass_balance'] = {
 }
 
 DETAILS['mass_balance:basal'] = {
-    'description': 'TODO',
+    'description': 'Description of basal melting',
     'properties': [
         ('bedrock', 'str', '0.1',
              'Describe the implementation of basal melting over bedrock'),
@@ -69,7 +74,7 @@ DETAILS['mass_balance:basal'] = {
 }
 
 DETAILS['mass_balance:frontal'] = {
-    'description': 'TODO',
+    'description': 'Description of claving/melting from the ice shelf front',
     'properties': [
         ('calving', 'str', '0.1',
              'Describe the implementation of calving from the front of the ice shelf'),
