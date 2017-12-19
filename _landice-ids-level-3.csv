@@ -1,4 +1,5 @@
 cmip6-id, cmip6-label, cmip6-type
+cmip6.landice.key_properties.model_overview, Landice > Key Properties > Model Overview, property
 cmip6.landice.key_properties.model_name, Landice > Key Properties > Model Name, property
 cmip6.landice.key_properties.ice_albedo, Landice > Key Properties > Ice Albedo, property
 cmip6.landice.key_properties.atmospheric_coupling_variables, Landice > Key Properties > Atmospheric Coupling Variables, property
