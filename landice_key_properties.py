@@ -12,21 +12,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'David Hassell'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'David Hassell'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Land ice key properties'
@@ -37,10 +22,6 @@ DESCRIPTION = 'Land ice key properties'
 DETAILS['toplevel'] = {
     'description': 'General key properties',
     'properties': [
-        ('overview', 'str', '1.1',
-             'Overview of land surface model.'),
-        ('model_name', 'str', '1.1',
-             'Name of land surface model code'),
         ('ice_albedo', 'ENUM:ice_albedo_methods', '1.N',
             'Specify how ice albedo is modelled',),
         ('atmospheric_coupling_variables', 'str', '1.1',

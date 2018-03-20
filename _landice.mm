@@ -2,7 +2,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land Ice Realm</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+        <dt><b>Description</b></dt><dd>Land Ice</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
 </html></richcontent><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="CHANGE HISTORY"><node STYLE="bubble" TEXT="0.1.0"><richcontent TYPE="NOTE"><html>
@@ -96,39 +96,116 @@
         <dt><b>Description</b></dt><dd>A sub-process simulated within a realm process.</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="DETAILS INHERITED FROM CIM"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="grid"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keyprops"><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="process"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="realm"><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="canonical_name" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="subprocess"><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="DETAILS INHERITED FROM CIM"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="grid"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keyprops"><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="process"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="realm"><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="canonical_name" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="subprocess"><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land ice key properties</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+        <dt><b>Description</b></dt><dd>Land ice grid</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of land surface model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of land surface model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.overview</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="adaptive_grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Name of land surface model code</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.model_name</dd>
+        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Name of land surface model code</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.model_name</dd>
+        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="base_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="resolution_limit"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="projection"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.projection</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.projection</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Land ice key properties</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Name of landice model code</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.name</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Name of landice model code</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_albedo"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -278,109 +355,46 @@
         <dt><b>Description</b></dt><dd>Code language(s).</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_languages</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="glaciers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land ice grid</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Overview of the grid in the land ice scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.overview</dd>
+        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of the grid in the land ice scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.overview</dd>
+        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="adaptive_grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="base_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the glaciers in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the glaciers in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.name</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="resolution_limit"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="projection"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.projection</dd>
+        <dt><b>Description</b></dt><dd>Overview of land ice glaciers in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.projection</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="glaciers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Overview of glaciers in the land ice scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.overview</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Overview of glaciers in the land ice scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of land ice glaciers in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -415,28 +429,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of the ice sheet and ice shelf in the land ice scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.overview</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the ice in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of the ice sheet and ice shelf in the land ice scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.overview</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the ice in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of ice sheet and ice shelf in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of ice sheet and ice shelf in landice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="grounding_line_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -513,7 +541,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of the surface mass balance treatment</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+        <dt><b>Description</b></dt><dd>Description of the surface mass balance treatment</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface_mass_balance"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -604,7 +632,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd /><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+        <dt><b>Description</b></dt><dd /><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -682,6 +710,69 @@
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.timestep</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="landice"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.key_properties.toplevel.model_name"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.key_properties.toplevel.ice_albedo"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.grid.adaptive_grid"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.grid.base_resolution"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.grid.resolution_limit"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.ice.grounding_line_method"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.ice.ice_sheet"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.ice.ice_shelf"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.glaciers.dynamic_areal_extent"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node></node></map>

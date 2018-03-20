@@ -1,0 +1,23 @@
+{
+    "AUTHORS": [
+        "David Hassell"
+    ],
+    "CHANGE_HISTORY": [
+        ["0.1.0", "2017-06-28", "David Hassell", "Initialised"]
+
+    ],
+    "CONTACT": "David Hassell",
+    "CONTRIBUTORS": [],
+    "LABEL": "Main",
+    "PROPERTIES": [
+        ["cmip6.landice.key_properties.toplevel.model_name", 1],
+        ["cmip6.landice.key_properties.toplevel.ice_albedo", 1],
+        ["cmip6.landice.grid.adaptive_grid", 1],
+        ["cmip6.landice.grid.base_resolution", 1],
+        ["cmip6.landice.grid.resolution_limit", 1],
+        ["cmip6.landice.ice.grounding_line_method", 1],
+        ["cmip6.landice.ice.ice_sheet", 1],
+        ["cmip6.landice.ice.ice_shelf", 1],
+        ["cmip6.landice.glaciers.dynamic_areal_extent", 1]
+    ]
+}

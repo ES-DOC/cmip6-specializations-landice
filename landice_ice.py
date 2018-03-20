@@ -12,21 +12,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'David Hassell'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'David Hassell'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Ice sheet and ice shelf'
@@ -35,10 +20,8 @@ DESCRIPTION = 'Ice sheet and ice shelf'
 # KEY PROPERTIES: top level
 # --------------------------------------------------------------------
 DETAILS['toplevel'] = {
-    'description': 'General key properties in ice sheets and ice shelves',
+    'description': 'Ice sheet and ice shelf top level properties',
     'properties': [
-        ('overview', 'str', '1.1',
-             'Overview of the ice sheet and ice shelf in the land ice scheme'),
         ('grounding_line_method', 'ENUM:grounding_line_methods', '1.1',
             'Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling'),
         ('ice_sheet', 'bool', '1.1',
@@ -58,11 +41,7 @@ DETAILS['mass_balance'] = {
     'properties': [
         ('surface_mass_balance', 'str', '1.1',
             'Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution'),
-    ],
-    'detail_sets': [
-        'basal',
-        'frontal'
-    ],
+    ]
 }
 
 DETAILS['mass_balance:basal'] = {
@@ -103,9 +82,6 @@ DETAILS['dynamics'] = {
 #             'Describe the coupling method between the ice sheet and ice shelf and atmosphe#re'),
 #        ('coupling_wth_ocean', 'str', '0.1',
 #             'Describe the coupling method between the ice sheet and ice shelf and the ocea#n'),
-#    ],
-#    'detail_sets': [
-#        'numerics',
     ]
 }
 

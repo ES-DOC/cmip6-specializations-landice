@@ -1,22 +1,30 @@
 {
     "label": "Landice", 
-    "description": "Land Ice Realm", 
+    "description": "Land Ice", 
     "id": "cmip6.landice", 
-    "contact": "David Hassell", 
+    "contact": null, 
     "processes": [
         {
             "label": "Glaciers", 
             "description": "Land ice glaciers", 
             "id": "cmip6.landice.glaciers", 
-            "contact": "David Hassell", 
+            "contact": null, 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of glaciers in the land ice scheme", 
-                    "id": "cmip6.landice.glaciers.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the glaciers in landice model.", 
+                    "id": "cmip6.landice.glaciers.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land ice glaciers in landice model.", 
+                    "id": "cmip6.landice.glaciers.overview", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Description", 
@@ -24,7 +32,7 @@
                     "id": "cmip6.landice.glaciers.description", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Dynamic Areal Extent", 
@@ -32,7 +40,7 @@
                     "id": "cmip6.landice.glaciers.dynamic_areal_extent", 
                     "cardinality": "0.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }
             ]
         }, 
@@ -40,15 +48,23 @@
             "label": "Ice", 
             "description": "Ice sheet and ice shelf", 
             "id": "cmip6.landice.ice", 
-            "contact": "David Hassell", 
+            "contact": null, 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of the ice sheet and ice shelf in the land ice scheme", 
-                    "id": "cmip6.landice.ice.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the ice in landice model.", 
+                    "id": "cmip6.landice.ice.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of ice sheet and ice shelf in landice model.", 
+                    "id": "cmip6.landice.ice.overview", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Grounding Line Method", 
@@ -79,7 +95,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Ice Sheet", 
@@ -87,7 +103,7 @@
                     "id": "cmip6.landice.ice.ice_sheet", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Ice Shelf", 
@@ -95,7 +111,7 @@
                     "id": "cmip6.landice.ice.ice_shelf", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }
             ], 
             "subProcesses": [
@@ -103,7 +119,7 @@
                     "label": "Mass Balance", 
                     "description": "Description of the surface mass balance treatment", 
                     "id": "cmip6.landice.ice.mass_balance", 
-                    "contact": "David Hassell", 
+                    "contact": null, 
                     "properties": [
                         {
                             "label": "Surface Mass Balance", 
@@ -167,7 +183,7 @@
                     "label": "Dynamics", 
                     "description": "", 
                     "id": "cmip6.landice.ice.dynamics", 
-                    "contact": "David Hassell", 
+                    "contact": null, 
                     "properties": [
                         {
                             "label": "Description", 
@@ -229,13 +245,13 @@
         "label": "Grid", 
         "description": "Land ice grid", 
         "id": "cmip6.landice.grid", 
-        "contact": "David Hassell", 
+        "contact": null, 
         "properties": [
             {
                 "label": "Overview", 
-                "description": "Overview of the grid in the land ice scheme", 
+                "description": "Overview of grid in landice model.", 
                 "id": "cmip6.landice.grid.overview", 
-                "cardinality": "1.1", 
+                "cardinality": "0.1", 
                 "type": "str", 
                 "uiOrdinal": 1
             }, 
@@ -277,20 +293,20 @@
         "label": "Key Properties", 
         "description": "Land ice key properties", 
         "id": "cmip6.landice.key_properties", 
-        "contact": "David Hassell", 
+        "contact": null, 
         "properties": [
             {
-                "label": "Overview", 
-                "description": "Overview of land surface model.", 
-                "id": "cmip6.landice.key_properties.overview", 
+                "label": "Name", 
+                "description": "Name of landice model code", 
+                "id": "cmip6.landice.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "uiOrdinal": 1
             }, 
             {
-                "label": "Model Name", 
-                "description": "Name of land surface model code", 
-                "id": "cmip6.landice.key_properties.model_name", 
+                "label": "Overview", 
+                "description": "Overview of landice model.", 
+                "id": "cmip6.landice.key_properties.overview", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "uiOrdinal": 2
