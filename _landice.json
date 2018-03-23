@@ -2,13 +2,13 @@
     "label": "Landice", 
     "description": "Land Ice", 
     "id": "cmip6.landice", 
-    "contact": null, 
+    "contact": "David Hassell", 
     "processes": [
         {
             "label": "Glaciers", 
             "description": "Land ice glaciers", 
             "id": "cmip6.landice.glaciers", 
-            "contact": null, 
+            "contact": "David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
@@ -48,7 +48,7 @@
             "label": "Ice", 
             "description": "Ice sheet and ice shelf", 
             "id": "cmip6.landice.ice", 
-            "contact": null, 
+            "contact": "David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
@@ -119,15 +119,23 @@
                     "label": "Mass Balance", 
                     "description": "Description of the surface mass balance treatment", 
                     "id": "cmip6.landice.ice.mass_balance", 
-                    "contact": null, 
+                    "contact": "David Hassell", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of description of the surface mass balance treatment in landice model.", 
+                            "id": "cmip6.landice.ice.mass_balance.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Surface Mass Balance", 
                             "description": "Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution", 
                             "id": "cmip6.landice.ice.mass_balance.surface_mass_balance", 
                             "cardinality": "1.1", 
                             "type": "str", 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }
                     ], 
                     "propertySets": [
@@ -183,15 +191,23 @@
                     "label": "Dynamics", 
                     "description": "", 
                     "id": "cmip6.landice.ice.dynamics", 
-                    "contact": null, 
+                    "contact": "David Hassell", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of  in landice model.", 
+                            "id": "cmip6.landice.ice.dynamics.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Description", 
                             "description": "General description if ice sheet and ice shelf dynamics", 
                             "id": "cmip6.landice.ice.dynamics.description", 
                             "cardinality": "1.1", 
                             "type": "str", 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Approximation", 
@@ -218,7 +234,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Adaptive Timestep", 
@@ -226,7 +242,7 @@
                             "id": "cmip6.landice.ice.dynamics.adaptive_timestep", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Timestep", 
@@ -234,7 +250,7 @@
                             "id": "cmip6.landice.ice.dynamics.timestep", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }
@@ -245,15 +261,23 @@
         "label": "Grid", 
         "description": "Land ice grid", 
         "id": "cmip6.landice.grid", 
-        "contact": null, 
+        "contact": "David Hassell", 
         "properties": [
+            {
+                "label": "Name", 
+                "description": "Name of grid in landice model.", 
+                "id": "cmip6.landice.grid.name", 
+                "cardinality": "0.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
             {
                 "label": "Overview", 
                 "description": "Overview of grid in landice model.", 
                 "id": "cmip6.landice.grid.overview", 
                 "cardinality": "0.1", 
                 "type": "str", 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Adaptive Grid", 
@@ -261,7 +285,7 @@
                 "id": "cmip6.landice.grid.adaptive_grid", 
                 "cardinality": "1.1", 
                 "type": "bool", 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Base Resolution", 
@@ -269,7 +293,7 @@
                 "id": "cmip6.landice.grid.base_resolution", 
                 "cardinality": "1.1", 
                 "type": "float", 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Resolution Limit", 
@@ -277,7 +301,7 @@
                 "id": "cmip6.landice.grid.resolution_limit", 
                 "cardinality": "0.1", 
                 "type": "float", 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Projection", 
@@ -285,7 +309,7 @@
                 "id": "cmip6.landice.grid.projection", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 5
+                "uiOrdinal": 6
             }
         ]
     }, 
@@ -293,7 +317,7 @@
         "label": "Key Properties", 
         "description": "Land ice key properties", 
         "id": "cmip6.landice.key_properties", 
-        "contact": null, 
+        "contact": "David Hassell", 
         "properties": [
             {
                 "label": "Name", 
