@@ -754,7 +754,7 @@
         <dt><b>Description</b></dt><dd>Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.timestep</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.timestep</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="landice"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.key_properties.toplevel.model_name"><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="landice"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.key_properties.name"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
