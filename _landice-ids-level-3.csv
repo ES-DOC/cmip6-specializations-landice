@@ -1,11 +1,4 @@
 cmip6-id, cmip6-label, cmip6-type
-cmip6.landice.grid.name, Landice > Grid > Name, property
-cmip6.landice.grid.overview, Landice > Grid > Overview, property
-cmip6.landice.grid.adaptive_grid, Landice > Grid > Adaptive Grid, property
-cmip6.landice.grid.base_resolution, Landice > Grid > Base Resolution, property
-cmip6.landice.grid.resolution_limit, Landice > Grid > Resolution Limit, property
-cmip6.landice.grid.projection, Landice > Grid > Projection, property
-, , 
 cmip6.landice.key_properties.name, Landice > Key Properties > Name, property
 cmip6.landice.key_properties.overview, Landice > Key Properties > Overview, property
 cmip6.landice.key_properties.ice_albedo, Landice > Key Properties > Ice Albedo, property
@@ -15,6 +8,13 @@ cmip6.landice.key_properties.prognostic_variables, Landice > Key Properties > Pr
 cmip6.landice.key_properties.software_properties.repository, Landice > Key Properties > Software Properties > Repository, property
 cmip6.landice.key_properties.software_properties.code_version, Landice > Key Properties > Software Properties > Code Version, property
 cmip6.landice.key_properties.software_properties.code_languages, Landice > Key Properties > Software Properties > Code Languages, property
+, , 
+cmip6.landice.grid.name, Landice > Grid > Name, property
+cmip6.landice.grid.overview, Landice > Grid > Overview, property
+cmip6.landice.grid.adaptive_grid, Landice > Grid > Adaptive Grid, property
+cmip6.landice.grid.base_resolution, Landice > Grid > Base Resolution, property
+cmip6.landice.grid.resolution_limit, Landice > Grid > Resolution Limit, property
+cmip6.landice.grid.projection, Landice > Grid > Projection, property
 , , 
 cmip6.landice.glaciers.name, Landice > Glaciers > Name, property
 cmip6.landice.glaciers.overview, Landice > Glaciers > Overview, property
