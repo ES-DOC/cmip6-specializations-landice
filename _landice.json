@@ -23,7 +23,7 @@
                     "description": "Overview of land ice glaciers in landice model.", 
                     "id": "cmip6.landice.glaciers.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -63,7 +63,7 @@
                     "description": "Overview of ice sheet and ice shelf in landice model.", 
                     "id": "cmip6.landice.ice.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -276,7 +276,7 @@
                 "description": "Overview of grid in landice model.", 
                 "id": "cmip6.landice.grid.overview", 
                 "cardinality": "0.1", 
-                "type": "str", 
+                "type": "l", 
                 "uiOrdinal": 2
             }, 
             {
@@ -328,12 +328,20 @@
                 "uiOrdinal": 1
             }, 
             {
+                "label": "Keywords", 
+                "description": "Keywords associated with landice model code", 
+                "id": "cmip6.landice.key_properties.keywords", 
+                "cardinality": "1.1", 
+                "type": "cs", 
+                "uiOrdinal": 2
+            }, 
+            {
                 "label": "Overview", 
                 "description": "Overview of landice model.", 
                 "id": "cmip6.landice.key_properties.overview", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 2
+                "type": "l", 
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Ice Albedo", 
@@ -360,7 +368,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Atmospheric Coupling Variables", 
@@ -368,7 +376,7 @@
                 "id": "cmip6.landice.key_properties.atmospheric_coupling_variables", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Oceanic Coupling Variables", 
@@ -376,7 +384,7 @@
                 "id": "cmip6.landice.key_properties.oceanic_coupling_variables", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 5
+                "uiOrdinal": 6
             }, 
             {
                 "label": "Prognostic Variables", 
@@ -403,7 +411,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 6
+                "uiOrdinal": 7
             }
         ], 
         "propertySets": [
