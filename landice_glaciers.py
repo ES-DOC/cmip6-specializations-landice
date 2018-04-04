@@ -22,7 +22,7 @@ DESCRIPTION = 'Land ice glaciers'
 DETAILS['toplevel'] = {
     'description': 'Land ice glaciers top level properties',
     'properties': [
-        ('description', 'str', '1.1',
+        ('description', 'l-str', '1.1',
              'Describe the treatment of glaciers, if any'),
         ('dynamic_areal_extent', 'bool', '0.1',
              'Does the model include a dynamic glacial extent?'),

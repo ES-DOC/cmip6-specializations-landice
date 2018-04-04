@@ -40,6 +40,8 @@ CHANGE_HISTORY = [
          "Reorganisation of grid info; first draft of short table"),
     ("0.5.0", "2017-12-15", "David Hassell (NCAS)",
          "Updated with input from Christian Rodehacke (DMI)"),
+    ("1.0.0", "2018-04-04", "David Hassell (NCAS)",
+         "Moved to v1"),
 ]
 
 # --------------------------------------------------------------------

@@ -24,9 +24,9 @@ DETAILS['toplevel'] = {
     'properties': [
         ('ice_albedo', 'ENUM:ice_albedo_methods', '1.N',
             'Specify how ice albedo is modelled',),
-        ('atmospheric_coupling_variables', 'str', '1.1',
+        ('atmospheric_coupling_variables', 'cs-str', '1.1',
              'Which variables are passed between the atmosphere and ice (e.g. orography, ice mass)'), 
-        ('oceanic_coupling_variables', 'str', '1.1',
+        ('oceanic_coupling_variables', 'cs-str', '1.1',
              'Which variables are passed between the ocean and ice'), 
         ('prognostic_variables', 'ENUM:prognostic_variable_types', '1.N',
              'Which variables are prognostically calculated in the ice model'),
@@ -40,7 +40,7 @@ DETAILS['toplevel:software_properties'] = {
             "Location of code for this component."),
         ('code_version','str', '0.1',
             "Code version identifier."),
-        ('code_languages','str', '0.N',
+        ('code_languages','cs-str', '0.1',
             "Code language(s)."),
     ]
 }

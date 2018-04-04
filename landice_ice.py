@@ -39,7 +39,7 @@ DETAILS['toplevel'] = {
 DETAILS['mass_balance'] = {
     'description': 'Description of the surface mass balance treatment',
     'properties': [
-        ('surface_mass_balance', 'str', '1.1',
+        ('surface_mass_balance', 'l-str', '1.1',
             'Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution'),
     ]
 }
@@ -47,9 +47,9 @@ DETAILS['mass_balance'] = {
 DETAILS['mass_balance:basal'] = {
     'description': 'Description of basal melting',
     'properties': [
-        ('bedrock', 'str', '0.1',
+        ('bedrock', 'l-str', '0.1',
              'Describe the implementation of basal melting over bedrock'),
-        ('ocean', 'str', '0.1',
+        ('ocean', 'l-str', '0.1',
              'Describe the implementation of basal melting over the ocean'),
     ]
 }
@@ -57,9 +57,9 @@ DETAILS['mass_balance:basal'] = {
 DETAILS['mass_balance:frontal'] = {
     'description': 'Description of claving/melting from the ice shelf front',
     'properties': [
-        ('calving', 'str', '0.1',
+        ('calving', 'l-str', '0.1',
              'Describe the implementation of calving from the front of the ice shelf'),
-        ('melting', 'str', '0.1',
+        ('melting', 'l-str', '0.1',
              'Describe the implementation of melting from the front of the ice shelf'),
     ]
 }
@@ -70,7 +70,7 @@ DETAILS['mass_balance:frontal'] = {
 DETAILS['dynamics'] = {
     'description': '',
     'properties': [
-        ('description', 'str', '1.1',
+        ('description', 'l-str', '1.1',
             'General description if ice sheet and ice shelf dynamics'),
         ('approximation', 'ENUM:approximation_types', '1.N',
             'Approximation type used in modelling ice dynamics'),
