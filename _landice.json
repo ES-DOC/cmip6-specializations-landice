@@ -23,7 +23,7 @@
                     "description": "Overview of land ice glaciers in landice model.", 
                     "id": "cmip6.landice.glaciers.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -31,7 +31,7 @@
                     "description": "Describe the treatment of glaciers, if any", 
                     "id": "cmip6.landice.glaciers.description", 
                     "cardinality": "1.1", 
-                    "type": "str", 
+                    "type": "l-str", 
                     "uiOrdinal": 3
                 }, 
                 {
@@ -63,7 +63,7 @@
                     "description": "Overview of ice sheet and ice shelf in landice model.", 
                     "id": "cmip6.landice.ice.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -134,7 +134,7 @@
                             "description": "Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution", 
                             "id": "cmip6.landice.ice.mass_balance.surface_mass_balance", 
                             "cardinality": "1.1", 
-                            "type": "str", 
+                            "type": "l-str", 
                             "uiOrdinal": 2
                         }
                     ], 
@@ -149,7 +149,7 @@
                                     "description": "Describe the implementation of basal melting over bedrock", 
                                     "id": "cmip6.landice.ice.mass_balance.basal.bedrock", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -157,7 +157,7 @@
                                     "description": "Describe the implementation of basal melting over the ocean", 
                                     "id": "cmip6.landice.ice.mass_balance.basal.ocean", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
                                     "uiOrdinal": 2
                                 }
                             ]
@@ -172,7 +172,7 @@
                                     "description": "Describe the implementation of calving from the front of the ice shelf", 
                                     "id": "cmip6.landice.ice.mass_balance.frontal.calving", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -180,7 +180,7 @@
                                     "description": "Describe the implementation of melting from the front of the ice shelf", 
                                     "id": "cmip6.landice.ice.mass_balance.frontal.melting", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
                                     "uiOrdinal": 2
                                 }
                             ]
@@ -206,7 +206,7 @@
                             "description": "General description if ice sheet and ice shelf dynamics", 
                             "id": "cmip6.landice.ice.dynamics.description", 
                             "cardinality": "1.1", 
-                            "type": "str", 
+                            "type": "l-str", 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -276,7 +276,7 @@
                 "description": "Overview of grid in landice model.", 
                 "id": "cmip6.landice.grid.overview", 
                 "cardinality": "0.1", 
-                "type": "l", 
+                "type": "l-str", 
                 "uiOrdinal": 2
             }, 
             {
@@ -332,7 +332,7 @@
                 "description": "Keywords associated with landice model code", 
                 "id": "cmip6.landice.key_properties.keywords", 
                 "cardinality": "1.1", 
-                "type": "cs", 
+                "type": "cs-str", 
                 "uiOrdinal": 2
             }, 
             {
@@ -340,7 +340,7 @@
                 "description": "Overview of landice model.", 
                 "id": "cmip6.landice.key_properties.overview", 
                 "cardinality": "1.1", 
-                "type": "l", 
+                "type": "l-str", 
                 "uiOrdinal": 3
             }, 
             {
@@ -375,7 +375,7 @@
                 "description": "Which variables are passed between the atmosphere and ice (e.g. orography, ice mass)", 
                 "id": "cmip6.landice.key_properties.atmospheric_coupling_variables", 
                 "cardinality": "1.1", 
-                "type": "str", 
+                "type": "cs-str", 
                 "uiOrdinal": 5
             }, 
             {
@@ -383,7 +383,7 @@
                 "description": "Which variables are passed between the ocean and ice", 
                 "id": "cmip6.landice.key_properties.oceanic_coupling_variables", 
                 "cardinality": "1.1", 
-                "type": "str", 
+                "type": "cs-str", 
                 "uiOrdinal": 6
             }, 
             {
@@ -440,8 +440,8 @@
                         "label": "Code Languages", 
                         "description": "Code language(s).", 
                         "id": "cmip6.landice.key_properties.software_properties.code_languages", 
-                        "cardinality": "0.N", 
-                        "type": "str", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
                         "uiOrdinal": 3
                     }
                 ]
