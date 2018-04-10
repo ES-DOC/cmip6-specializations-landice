@@ -42,6 +42,8 @@ CHANGE_HISTORY = [
          "Updated with input from Christian Rodehacke (DMI)"),
     ("1.0.0", "2018-04-04", "David Hassell (NCAS)",
          "Moved to v1"),
+    ("1.0.1", "2018-04-04", "David Hassell",
+        "Removed some l-str"),
 ]
 
 # --------------------------------------------------------------------
