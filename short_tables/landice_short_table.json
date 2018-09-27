@@ -8,7 +8,7 @@
     ],
     "CONTACT": "David Hassell",
     "CONTRIBUTORS": [],
-    "LABEL": "Main",
+    "LABEL": "Land ice CMIP6 short table",
     "PROPERTIES": [
         ["cmip6.landice.key_properties.name", 1],
         ["cmip6.landice.key_properties.toplevel.ice_albedo", 1],
