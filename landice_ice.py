@@ -71,7 +71,7 @@ DETAILS['dynamics'] = {
     'description': '',
     'properties': [
         ('description', 'l-str', '1.1',
-            'General description if ice sheet and ice shelf dynamics'),
+            'General description of ice sheet and ice shelf dynamics'),
         ('approximation', 'ENUM:approximation_types', '1.N',
             'Approximation type used in modelling ice dynamics'),
         ('adaptive_timestep', 'bool', '1.1',
